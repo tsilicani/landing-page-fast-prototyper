@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -18,7 +19,10 @@ export class SignupComponent implements OnInit {
     this.createForm();
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log(new AuthService().signup());
+    console.log(new Date().getTime());
+  }
 
   login() {
     this.isLoading = true;
