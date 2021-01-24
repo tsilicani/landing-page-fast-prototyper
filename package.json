@@ -2,13 +2,13 @@
   "name": "builder",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve --open",
-    "push": "git add . && echo \"Enter commit message and press [ENTER]:\" &&read message && git commit -m \"$message\" && git push",
+    "push": "git add . && echo \"Enter commit message and press [ENTER]:\" &&read message && git commit -m [\"$message\" || \"Work in progress\"] && git push",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ng": "ng"
   },
   "private": true,
   "dependencies": {
