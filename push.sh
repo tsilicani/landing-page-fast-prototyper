@@ -8,7 +8,7 @@ git add .
 git commit -m"${_message}"
 git push
 
-echo '                               
+echo -e '                               
                |             ||
 ,---..   .,---.|---.,---.,---||
 |   ||   |`---.|   ||---'|   | 
