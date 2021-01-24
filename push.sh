@@ -6,12 +6,13 @@ echo "The git commit message will be: \"$_message\""
 
 git add .
 git commit -m"${_message}"
+git push
 
-if git diff-index --quiet HEAD --; then
-    echo "Changes detected."
-    git push
-else
-    echo "No Changes detected: nothing to push."
-fi
+# if git diff-index --quiet HEAD --; then
+#     echo "Changes detected."
+    
+# else
+#     echo "No Changes detected: nothing to push."
+# fi
 
 echo "Push done."
