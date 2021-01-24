@@ -1,18 +1,38 @@
-<div class="container">
-  <mat-card>
-    <p>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-    </p>
-    <mat-card-content>
-      <mat-card-title translate>Hello world !</mat-card-title>
-      <mat-card-subtitle>
-      </mat-card-subtitle>
-      <mat-card-actions>
-        <button
-          mat-raised-button>
-          Click me to do nothing
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-</div>
+<button fxShow="true" fxHide.gt-sm="true" mat-fab color="accent" (click)="sidenav.toggle()">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-sidenav-container fxFlexFill class="example-container">
+  <mat-sidenav #sidenav fxLayout="column">
+    <div fxLayout="column">
+      <a mat-button href="#">Features</a>
+      <a mat-button href="#">Pricing</a>
+      <a mat-button href="#">Contact</a>
+      <a mat-button href="#">Docs</a>
+      <a mat-button href="#" color="accent">Login</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <section class="page-header" style="height: 80vh;">
+      <header>
+        <nav class="navbar-top">
+          <div class="container">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+              <a href="#" class="navbar-brand">
+                <span class="brand-name">!Faster</span>
+              </a>
+              <div class="navbar-right" fxShow="true" fxHide.lt-md="true">
+                <a mat-button href="#">Features</a>
+                <a mat-button href="#">Pricing</a>
+                <a mat-button href="#">Contact</a>
+                <a mat-button href="#">Docs</a>
+                <a mat-stroked-button href="#" color="accent">Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
