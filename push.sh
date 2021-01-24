@@ -1,4 +1,5 @@
 #!/bin/bash
+
 _default_message="Work in progress"
 read -p "enter the git commit message: [default=\"$_default_message\"] " _message
 : ${_message:=$_default_message}
