@@ -8,4 +8,4 @@ git add .
 git commit -m"${_message}"
 git push
 
-echo -e "\x1B[32mpushed successfully\x1B[0m"                         
+echo -e "\n\x1B[32mpushed successfully\x1B[0m"                         
