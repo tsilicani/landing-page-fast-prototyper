@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve --open",
-    "push": "git add . && echo \"Enter commit message and press [ENTER]:\" &&read message && git commit -m [\"$message\" || \"Work in progress\"] && git push",
+    "push": "./push.sh",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
