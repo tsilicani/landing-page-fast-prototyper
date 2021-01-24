@@ -1,12 +1,12 @@
-echo "Enter your message"
+echo "Enter the git commit message."
 read message
 git add .
 git commit -m"${message}"
 if [ -n "$(git status - porcelain)" ];
 then
- echo "IT IS CLEAN"
+ echo "Nothing to commit."
 else
  git status
- echo "Pushing data to remote server!!!"
+ echo "Pushing..."
  git push -u origin master
 fi
